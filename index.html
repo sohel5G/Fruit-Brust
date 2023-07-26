@@ -26,6 +26,8 @@
                 extend: {
                     colors: {
                         'color-primary': '#F85559',
+                        'black-rgba-08': 'rgba(0, 0, 0, 0.8)',
+                        'black-rgba-02': 'rgba(0, 0, 0, 0.2)',
                     }
                 }
             }
@@ -55,11 +57,16 @@
                                     d="M4 6h16M4 12h16M4 18h16"></path>
                             </svg>
                         </label>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content right-0 mt-3 z-[1] p-2 bg-color-primary rounded-t-none rounded-b-lg w-52">
-                            <li><a class="text-white hover:text-white block text-right hover:bg-color-primary text-lg mt-5" href="#">Home</a></li>
-                            <li><a class="text-white hover:text-white block text-right hover:bg-color-primary text-lg mt-5" href="#">About Us</a></li>
-                            <li><a class="text-white hover:text-white block text-right hover:bg-color-primary text-lg mt-5" href="#">Shop</a></li>
-                            <li><a class="text-white hover:text-white block text-right hover:bg-color-primary text-lg mt-5" href="#">All Fruits</a></li>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content right-0 mt-3 z-[1] p-2 bg-color-primary rounded-t-none rounded-b-lg w-52">
+                            <li><a class="text-white hover:text-white block text-right hover:bg-color-primary text-lg mt-5"
+                                    href="#">Home</a></li>
+                            <li><a class="text-white hover:text-white block text-right hover:bg-color-primary text-lg mt-5"
+                                    href="#">About Us</a></li>
+                            <li><a class="text-white hover:text-white block text-right hover:bg-color-primary text-lg mt-5"
+                                    href="#">Shop</a></li>
+                            <li><a class="text-white hover:text-white block text-right hover:bg-color-primary text-lg mt-5"
+                                    href="#">All Fruits</a></li>
                         </ul>
                     </div>
                 </div>
@@ -76,8 +83,10 @@
                 <div class="navbar-end hidden lg:block lg:justify-end lg:text-right">
                     <div class="form-control">
                         <div class="input-group justify-end">
-                            <input type="text" placeholder="Search here" class="input border-t border-l border-b border-r-0 border-color-primary focus:border-0 focus:outline-none focus:border-t focus:border-l focus:border-b focus:border-r-0 nav-search-input-custom-style" />
-                            <button class="btn bg-white border-t border-r border-b border-l-0 border-color-primary hover:bg-white hover:border-t hover:border-r hover:border-b hover:border-l-0 hover:border-color-primary nav-search-icon-custom-style">
+                            <input type="text" placeholder="Search here"
+                                class="input border-t border-l border-b border-r-0 border-color-primary focus:border-0 focus:outline-none focus:border-t focus:border-l focus:border-b focus:border-r-0 nav-search-input-custom-style" />
+                            <button
+                                class="btn bg-white border-t border-r border-b border-l-0 border-color-primary hover:bg-white hover:border-t hover:border-r hover:border-b hover:border-l-0 hover:border-color-primary nav-search-icon-custom-style">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -94,14 +103,66 @@
     <main>
         <!-- Banner Section  -->
         <section>
-            <div class="container mx-auto">
+            <div class="container mx-auto flex justify-center items-center text-center">
 
-                
+
+                <div class="carousel w-full">
+
+                    <div id="slide1"
+                        class="carousel-item relative w-full bg-[url('./images/banner2.png')] bg-cover bg-no-repeat bg-center flex justify-center items-center min-h-[500px] before:content-[' '] before:absolute before:w-full before:h-full before:bg-gradient-to-b before:from-black-rgba-08 before:to-black-rgba-02">
+                            <div class="z-10">
+                                <h1 class="font-Garamond font-extrabold text-4xl lg:text-7xl text-white loading-[5rem]"> Exotic tastes at your <br> doorstep </h1>
+                                <p class="text-xl text-white my-10">We supply highly quality organic products</p>
+                                <a class="btn bg-color-primary border-none text-white hover:text-color-primary px-8 normal-case text-lg" href="#">Shop Now</a>
+                                <div
+                                    class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                    <a href="#slide3"
+                                        class="btn btn-circle bg-black text-white hover:bg-white hover:text-black border-none">❮</a>
+                                    <a href="#slide2"
+                                        class="btn btn-circle bg-black text-white hover:bg-white hover:text-black border-none">❯</a>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div id="slide2"
+                        class="carousel-item relative w-full bg-[url('./images/banner1.png')] bg-cover bg-no-repeat bg-center flex justify-center items-center min-h-[540px] before:content-[' '] before:absolute before:w-full before:h-full before:bg-gradient-to-b before:from-black-rgba-08 before:to-black-rgba-02">
+                            <div class="z-10">
+                                <h1 class="font-Garamond font-extrabold text-4xl lg:text-7xl text-white loading-[5rem]"> We Sell The Best Fruits! </h1>
+                                <p class="text-xl text-white my-10">We supply highly quality organic products</p>
+                                <a class="btn bg-color-primary border-none text-white hover:text-color-primary px-8 normal-case text-lg" href="#">Shop Now</a>
+                                <div
+                                    class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                    <a href="#slide1"
+                                        class="btn btn-circle bg-black text-white hover:bg-white hover:text-black border-none">❮</a>
+                                    <a href="#slide3"
+                                        class="btn btn-circle bg-black text-white hover:bg-white hover:text-black border-none">❯</a>
+                                </div>
+                            </div>
+                    </div>
+                    <div id="slide3"
+                        class="carousel-item relative w-full bg-[url('./images/banner3.png')] bg-cover bg-no-repeat bg-center flex justify-center items-center min-h-[540px] before:content-[' '] before:absolute before:w-full before:h-full before:bg-gradient-to-b before:from-black-rgba-08 before:to-black-rgba-02">
+                            <div class="z-10">
+                                <h1 class="font-Garamond font-extrabold text-4xl lg:text-7xl text-white loading-[5rem]"> Fruit Boxes & Free Delivery </h1>
+                                <p class="text-xl text-white my-10">We supply highly quality organic products</p>
+                                <a class="btn bg-color-primary border-none text-white hover:text-color-primary px-8 normal-case text-lg" href="#">Shop Now</a>
+                                <div
+                                    class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                    <a href="#slide2"
+                                        class="btn btn-circle bg-black text-white hover:bg-white hover:text-black border-none">❮</a>
+                                    <a href="#slide1"
+                                        class="btn btn-circle bg-black text-white hover:bg-white hover:text-black border-none">❯</a>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+
 
             </div>
         </section>
 
 
+        <!-- Bonus Section  -->
         <section>
             <div class="container mx-auto">
                 <h1>Hello World</h1>
